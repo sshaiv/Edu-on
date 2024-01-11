@@ -1,0 +1,216 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu-on</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">
+                <img src="./logo.png">
+            </div>
+
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="#about_section">about</a></li>
+                <li><a href="#services_section">Services</a></li>
+                <li><a href="#contactus_section">Contact</a></li>
+                <li><a href="#Feedback_section">Feedback</a></li>
+                <!-- <li><a href="assesment.html">Assessment</a></li> -->
+            </ul>
+
+            <a class="get-started" href="login.html">Get Started</a>
+            <!-- <img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu"> -->
+        </nav>
+        <div class="head-container">
+            <div class="quote">
+                <p>Edu-on ..... The Online Learning Plateform</p>
+                <h5> Educational methods include teaching , training , storytelling , discussion and directed research!
+                </h5>
+                <a class="get-started" href="login.html"
+                    style="position: relative;top:8rem; right: 4rem;width: 50rem;height: 5rem;padding: 2rem;">Get
+                    Started</a>
+            </div>
+            <div class="svg-image">
+                <img src="./svg1.jpg" alt="svg">
+            </div>
+        </div>
+
+        <div class="side-menu" id="side-menu">
+            <div class="close" onclick="sideMenu(1)"><img src="./close.png"></div>
+            <div class="user">
+                <img src="#" alt="Username">
+                <p>Shim_699</p>
+            </div>
+            <ul>
+                <li><a class="active" href="">Home</a></li>
+                <li><a href="#about_section">about</a></li>
+                <li><a href="#services_section">Services</a></li>
+                <li><a href="#contactus_section">Contact</a></li>
+                <li><a href="#Feedback_section">Feedback</a></li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <!-- ABOUT -->
+    <div class="diffSection" id="about_section" style="position: relative;bottom:12rem;">
+        <center>
+            <p style="font-size: 50px; padding: 100px;position: relative;width: 20rem;">About</p>
+        </center>
+        <div class="about-content">
+            <div class="side-image">
+                <img class="sideImage" src="./e3.jpg">
+            </div>
+            <div class="side-text">
+                <h2>What you think about us ?</h2>
+                <p>"Our website provides you with suggestions for the best learning platforms for all courses... so that
+                    you can find all types of the best learning material on a single platform."<br ><span style="position: relative;color:rgb(165, 28, 28);font-size: 1.2rem;"> "Our website offers
+                    you this convenience completely free of cost. Additionally, we have a premium purchase plan that
+                    provides you with additional facilities such as teacher assessments, lecture videos, special
+                    mentorship, and personalized guidance through communication." </span> <a class="get-started" href="login.html" style="position: relative;left: 5rem;top: 1rem;">premium</a>|</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="service-swipe">
+    <div class=" diffSection" id="services_section">
+        <center>
+            <p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Services</p>
+        </center>
+    </div>
+    <a href="#">
+        <div class="s-card"><img src="./computer-courses.png">
+            <p>Free Online Computer Courses</p>
+        </div>
+    </a>
+    <a href="#">
+        <div class="s-card"><img src="./brainbooster.png">
+            <p>Building Concepts for Competitive Exams</p>
+        </div>
+    </a>
+    <a href="#">
+        <div class="s-card"><img src="./online-tutorials.png">
+            <p>Online Video Lectures</p>
+        </div>
+    </a>
+    <a href="#">
+        <div class="s-card"><img src="./papers.jpg">
+            <p>Sample Papers of Various Competitive Exams</p>
+        </div>
+    </a>
+    <a href="#">
+        <div class="s-card"><img src="./p3.png">
+            <p>Performance and Ranking Report</p>
+        </div>
+    </a>
+    <a href="#contactus_section">
+        <div class="s-card"><img src="./discussion.png">
+            <p>Discussion with Our Tutors & Mentors</p>
+        </div>
+    </a>
+    <a href="assesment/assesment.html">
+        <div class="s-card"><img src="./q1.png">
+            <p>Tutor Assesment</p>
+        </div>
+    </a>
+    <a href="#contactus_section">
+        <div class="s-card"><img src="./help.png">
+            <p>24x7 Online Support</p>
+        </div>
+    </a>
+    </div>
+    <!-- CONTACT US -->
+    <div class="diffSection" id="contactus_section">
+        <center>
+            <p style="font-size: 50px; padding: 100px">Contact Us</p>
+        </center>
+        <div class="csec"></div>
+        <div class="back-contact">
+            <div class="cc">
+                <form action="mailto:shraddhashaiv@gmail.com" method="post" enctype="text/plain">
+                    <label>First Name <span class="imp">*</span></label><label style="margin-left: 185px">Last Name
+                        <span class="imp">*</span></label><br>
+                    <center>
+                        <input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input
+                            type="text" name="lname" style="width: 175px" required="required"><br>
+                    </center>
+                    <label>Email <span class="imp">*</span></label><br>
+                    <input type="email" name="mail" style="width: 100%" required="required"><br>
+                    <label>Message <span class="imp">*</span></label><br>
+                    <input type="text" name="message" style="width: 100%" required="required"><br>
+                    <label>Additional Details</label><br>
+                    <textarea name="addtional"></textarea><br>
+                    <button type="submit" id="csubmit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="title2" id="Feedback_section">
+        <span>Give Feedback</span>
+        <div class="shortdesc2">
+            <p>Please share your valuable feedback to us</p>
+        </div>
+    </div>
+
+    <div class="feedbox">
+        <div class="feed">
+            <form action="mailto:shraddhashaiv@gmail.com" method="post" enctype="text/plain">
+                <label>Your Name</label><br>
+                <input type="text" name="" class="fname" required="required"><br>
+                <label>Email</label><br>
+                <input type="email" name="mail" required="required"><br>
+                <label>Additional Details</label><br>
+                <textarea name="addtional"></textarea><br>
+                <button type="submit" id="csubmit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <!-- <img src="images/icon/logo - Copy.png" style="width: 200px;"> -->
+                <div class="logo"></div>
+                <div class="social-media">
+                    <a href="#"><img src="./fb.png"></a>
+                    <a href="#"><img src="./insta.png"></a>
+                    <a href="#"><img src="./tt.png"></a>
+                    <a href="#"><img src="./ytube.png"></a>
+                    <a href="#"><img src="./linkedin.png"></a>
+                </div><br><br>
+                <!-- <p class="rights-text">Copyright © 2021 Created By Roshan Kumar, Abhishek Dulat All Rights Reserved.</p> -->
+                <br>
+               
+            </div>
+            <div class="right-col">
+                <p><img src="./location.png"> Kalani Bagh <br>Dewas, Madhya Pradesh-455001</p><br>
+                <p><img src="./phone.png"> +91-6260-_ _ _ _-98<br><img src="./mail.png">&nbsp;
+                    Edu-on@gmail.com</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
